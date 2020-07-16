@@ -378,7 +378,6 @@ template {
 
 .navbar-button {
   background-color: #0A223D;
-  cursor: pointer;
 }
 
 .navbar-menu {
@@ -431,6 +430,7 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .search__icon {
