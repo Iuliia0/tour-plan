@@ -34,40 +34,49 @@
         <!-- /.user -->
       </div>
       <!-- /.navbar-top -->
-      <ul class="navbar-menu">
-        <li class="navbar-menu__item">
-          <a href="#" class="navbar-menu__link">All Deals</a>
-        </li>
 
-        <li class="navbar-menu__item">
-          <a href="#" class="navbar-menu__link">Hotels</a>
-        </li>
-
-        <li class="navbar-menu__item">
-          <a href="#" class="navbar-menu__link">Activities</a>
-        </li>
-
-        <li class="navbar-menu__item">
-          <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
-        </li>
-
-        <li class="navbar-menu__item">
-          <a href="#" class="navbar-menu__link">Restaurants</a>
-        </li>
-
-        <li class="navbar-menu__item">
-          <a href="#" class="navbar-menu__link">Events</a>
-        </li>
-
-        <li class="navbar-menu__item">
-          <a href="#" class="navbar-menu__link">Rodrigues</a>
-        </li>
-      </ul>
-      <!-- /.navbar-menu -->
     </div>
     <!-- /.container -->
+    <!-- Вытащили navbar-menu из контейнера, чтобы он расстянулся на всю шерину как в макете. Добавили новый класс  navbar-button чтобы указать фоновый цвет.-->
+    <div class="navbar-button">
+      <!-- navbar-menu завернули в container для того, чтобы ограничить  navbar-menu по ширине. Так элементы не будут разлетаться по всей странице-->
+      <div class="container">
+        <ul class="navbar-menu">
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">All Deals</a>
+          </li>
+
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Hotels</a>
+          </li>
+
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Activities</a>
+          </li>
+
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+          </li>
+
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Restaurants</a>
+          </li>
+
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Events</a>
+          </li>
+
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Rodrigues</a>
+          </li>
+        </ul>
+        <!-- /.navbar-menu -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.navbar-button -->
   </header>
-  <!-- /.header -->
+  <!-- /.navbar -->
 </body>
 
 </html>
