@@ -520,6 +520,17 @@ template {
   line-height: 15px;
 }
 
+.hotel-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .stars {
   flex-basis: 100%;
 }
@@ -607,6 +618,119 @@ template {
 
 .slider-button--prev:focus {
   outline: none;
+}
+
+.booking {
+  background-color: #0A223D;
+  color: #ffffff;
+  width: 350px;
+  min-height: 210px;
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.booking__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.booking__price {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking__start {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.booking__pricetag {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.booking__per-room {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.booking__room {
+  margin-top: 4px;
+}
+
+.booking__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.booking__description {
+  margin-left: 9px;
+}
+
+.booking__call-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.booking__heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.booking__number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: inherit;
+  text-decoration: none;
+}
+
+.booking__num {
+  margin-left: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.booking__button {
+  width: 100%;
+  min-height: 45px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.booking__button:focus {
+  outline: none;
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+  background-color: red;
+  border-radius: 10px;
 }
 
 @media (max-width: 1200px) {
