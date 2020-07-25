@@ -538,6 +538,8 @@ template {
 .hotel__slider {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 728px;
   height: 450px;
   margin-right: 30px;
@@ -563,7 +565,8 @@ template {
 }
 
 .hotel-slider__item {
-  height: 100%;
+  width: 728px;
+  height: 450px;
 }
 
 .hotel-slider__button {
@@ -640,6 +643,11 @@ template {
 .raiting__counter {
   font-size: 14px;
   line-height: 18px;
+}
+
+.swiper-images {
+  width: 100%;
+  height: 100%;
 }
 
 .booking {
@@ -764,7 +772,7 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url("../img/newsletter-bg.jpg");
+  background-image: url("img/newsletter-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1022,6 +1030,7 @@ template {
   }
   .hotel-slider__item {
     width: 100%;
+    height: 100%;
   }
   .booking {
     width: 340px;
