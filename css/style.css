@@ -536,17 +536,17 @@ template {
 }
 
 .hotel__slider {
+  position: relative;
+  display: flex;
   width: 728px;
   height: 450px;
-  display: flex;
   margin-right: 30px;
+  border-radius: 8px;
 }
 
 .hotel-slider {
   width: 100%;
   height: 100%;
-  position: relative;
-  border-radius: 8px;
 }
 
 .hotel-slider:after {
@@ -563,9 +563,7 @@ template {
 }
 
 .hotel-slider__item {
-  width: 728px;
-  height: 450px;
-  display: flex;
+  height: 100%;
 }
 
 .hotel-slider__button {
@@ -583,18 +581,18 @@ template {
   background-color: transparent;
 }
 
-.hotel-slider__button--next {
-  right: 18px;
-  background-image: url("../img/arrow-next.svg");
+.hotel-slider__button--prev {
+  left: 18px;
+  background-image: url("../img/arrow-prev.svg");
 }
 
 .hotel-slider__button:focus {
   outline: none;
 }
 
-.hotel-slider__button--prev {
-  left: 18px;
-  background-image: url("../img/arrow-prev.svg");
+.hotel-slider__button--next {
+  right: 18px;
+  background-image: url("../img/arrow-next.svg");
 }
 
 .hotel-slider__button:focus {
@@ -843,7 +841,8 @@ template {
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding-top: 0;
+  padding-bottom: 70px;
 }
 
 .reviews__titel {
@@ -854,6 +853,7 @@ template {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
+  margin-top: 40px;
 }
 
 .reviews-slider__item {
@@ -861,11 +861,12 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 730px;
+  max-width: 730px;
   margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
   padding: 0 62px 30px;
+  margin-bottom: 70px;
 }
 
 .reviews-slider__item:before {
@@ -1028,6 +1029,13 @@ template {
   .map {
     width: 340px;
   }
+  .reviews__titel {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1079,13 +1087,8 @@ template {
     order: -1;
     margin-left: 0;
   }
-  .hotel-info-slider {
-    t: 350px;
-  }
   .hotel-info-slider__item {
     display: flex;
-    align-self: center;
-    object-fit: cover;
     height: 100%;
     width: 100%;
   }
@@ -1108,6 +1111,29 @@ template {
   .newsletter__titel {
     margin-bottom: 37px;
     margin-top: 0;
+  }
+  .reviews__titel {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item:before, .reviews-slider__item:after {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 31px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    margin-left: -100px;
+    transform: translate(-50%, 0);
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    margin-right: -100px;
+    transform: translate(50%, 0);
   }
 }
 
