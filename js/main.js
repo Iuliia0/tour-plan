@@ -1,4 +1,4 @@
-var mySwiper = new Swiper(".hotel-slider", {
+var hotelSlider = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
 
@@ -14,18 +14,21 @@ var mySwiper = new Swiper(".hotel-slider", {
   },
 });
 
-// ymaps.ready(init);
+var reviewsSlider = new Swiper(".reviews-slider", {
+  // Optional parameters
+  loop: true,
 
-// function init() {
-//   var myMap = new ymaps.Map("map", {
-//     center: [7.89069615, 98.29505312],
-//     zoom: 16
-//   });
+  // Navigation arrows
+  navigation: {
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
+  },
 
-//   var placemark = new YMaps.Placemark(new YMaps.GeoPoint(7.89069615, 98.29505312));
-
-//   map.addOverlay(placemark);
-// }
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
 
 ymaps.ready(init);
 
@@ -65,8 +68,8 @@ function init() {
       iconColor: '#0095b6'
     }))
 
-}
+};
 
 $('.newsletter').parallax({
-  imageSrc: '../img/newsletter-bg.jpg'
+  imageSrc: 'img/newsletter-bg.jpg'
 });
