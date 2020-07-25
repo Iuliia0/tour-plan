@@ -976,6 +976,11 @@ template {
   margin: auto;
 }
 
+.stras-block__images {
+  width: 14px;
+  height: 14px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
