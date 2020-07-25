@@ -984,8 +984,8 @@ template {
     width: 590px;
   }
   .swiper-images {
-    width: 100%;
-    height: 100%;
+    width: 780px;
+    height: 450px;
     object-fit: cover;
   }
 }
@@ -1031,6 +1031,10 @@ template {
   .hotel-slider__item {
     width: 100%;
     height: 100%;
+  }
+  .swiper-images {
+    width: 700px;
+    height: 450px;
   }
   .booking {
     width: 340px;
@@ -1105,6 +1109,11 @@ template {
     flex-direction: column;
     min-height: 450px;
   }
+  .swiper-images {
+    display: flex;
+    width: 100%;
+    height: 350px;
+  }
   .booking {
     width: 100%;
   }
@@ -1156,6 +1165,11 @@ template {
   .hotel__slider {
     height: 250px;
     margin-bottom: 20px;
+  }
+  .swiper-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
   }
   .newsletter {
     padding: 76px 0 83px 0;
