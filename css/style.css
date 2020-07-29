@@ -1171,7 +1171,7 @@ template {
 }
 
 .footer__button {
-  min-width: 160px;
+  max-width: 160px;
   min-height: 50px;
   padding: 18px;
   font-style: normal;
@@ -1550,7 +1550,7 @@ template {
     padding-bottom: 100px;
   }
   .footer-wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: 320px;
   }
   .footer__logo {
     grid-row: 1;
