@@ -1550,7 +1550,7 @@ template {
     padding-bottom: 100px;
   }
   .footer-wrapper {
-    grid-template-columns: 320px;
+    grid-template-columns: minmax(250px, 526px);
   }
   .footer__logo {
     grid-row: 1;
