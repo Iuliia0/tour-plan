@@ -162,7 +162,7 @@
   .menu
     &-button
       display: flex
-      width: 1px
+      width: 3px
       height: 11px
       padding: 0
       margin-right: 8px
@@ -172,6 +172,8 @@
       border: none
       background-color: $light
       cursor: pointer
+      &:focus
+        outline: none
       &__line
         width: 16px
         height: 1px
@@ -337,16 +339,18 @@
     &-wrapper
       grid-template-columns: minmax(250px, 526px)
       grid-gap: 30px
+      
     &__logo
       grid-row: 1
       grid-column: 1
     &__social
       &-network
+        display: flex
+        flex-direction: column
         grid-row: 2
         grid-column: 1
-        flex-wrap: wrap
       &-links
-        flex-basis: 30%
+        width: 85px
         margin-top: 20px
     &__additional
       grid-row: 3
@@ -385,7 +389,7 @@
     &__search
       &_mobile
         &_visible
-          flex-basis: 90%
+          flex-basis: 70%
 
   .footer
     &__button
