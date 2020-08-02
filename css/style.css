@@ -1704,6 +1704,22 @@ template {
   .footer__info-wrapper {
     padding-left: 0;
   }
+  .modal__dialog {
+    padding: 30px 60px;
+  }
+  .modal__footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modal__button {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+  .modal__note {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1933,6 +1949,23 @@ template {
     margin-bottom: 36px;
   }
   .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .modal__dialog {
+    padding: 30px 40px;
+    width: 90%;
+  }
+  .modal__footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modal__button {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+  .modal__note {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
