@@ -1712,13 +1712,19 @@ template {
         flex-wrap: wrap;
   }
   .modal__button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .modal__note {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 15px;
-  }
-  .modal__note {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
   }
 }
 
@@ -1955,19 +1961,6 @@ template {
   .modal__dialog {
     padding: 30px 40px;
     width: 90%;
-  }
-  .modal__footer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .modal__button {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    margin-bottom: 15px;
-  }
-  .modal__note {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
   }
 }
 
