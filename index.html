@@ -146,7 +146,7 @@
           </p>
         </div>
         <!-- /.hotel-info__left -->
-        <div class="raiting hotel-info__raiting">
+        <div data-toggle="modal" data-href="#raiting-modal" class="raiting hotel-info__raiting">
           <span class="raiting__text">User Rattings</span>
           <span class="raiting__counter">4.5/5</span>
         </div>
@@ -214,7 +214,8 @@
               </a>
             </div>
             <!-- /.booking__call-center -->
-            <button class="button booking__button">View Other Options</button>
+            <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">View Other
+              Options</button>
             <!-- /.button booking__button -->
           </div>
           <!-- /.booking -->
@@ -587,7 +588,7 @@ quest" class="card__image" />
             <!-- Чтобы  send.php онимал, какие данные мы ему отправляем, их необходимо пометить name="name" -->
             <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" />
             <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" />
-            <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+            <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button">Send</button>
             <span class="footer__note">* Required Fields</span>
           </form>
@@ -621,22 +622,50 @@ quest" class="card__image" />
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
-  <div class="modal">
+  <div class="modal" id="booking-modal">
     <div class="modal__overlay"></div>
     <!-- /.modal__overlay -->
     <div class="modal__dialog">
       <a href="#" class="modal__close">
         <img src="img/close.svg" alt="Icon: close">
       </a>
-      <h3 class="footer__titel footer__titel--mb-3">Send us a message</h3>
+      <h3 class="modal__titel modal__titel--mb-3">Booking</h3>
       <!-- Должны указать путь, куда мы будет отправлять все данные из нашей формы action="send.php", Также необходимо указать по какому методу мы будем их отправлять method="POST"-->
-      <form action="send.php" method="POST" class="footer__form">
+      <form action="send.php" method="POST" class="modal__form">
         <!-- Чтобы  send.php онимал, какие данные мы ему отправляем, их необходимо пометить name="name" -->
-        <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" />
-        <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" />
-        <textarea class="footer__message" placeholder="Message" name="message"></textarea>
-        <button class="button footer__button">Send</button>
-        <span class="footer__note">* Required Fields</span>
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" />
+        <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone" />
+        <input type="text" class="input modal__input" placeholder="Email*" name="email" />
+        <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+        <div class="modal__footer">
+          <button class="button modal__button">Send</button>
+          <span class="modal__note">* Required Fields</span>
+        </div>
+        <!-- /.modal__footer -->
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+  <div class="modal" id="raiting-modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="Icon: close">
+      </a>
+      <h3 class="modal__titel modal__titel--mb-3">Send us a feedback</h3>
+      <!-- Должны указать путь, куда мы будет отправлять все данные из нашей формы action="send.php", Также необходимо указать по какому методу мы будем их отправлять method="POST"-->
+      <form action="send.php" method="POST" class="modal__form">
+        <!-- Чтобы  send.php онимал, какие данные мы ему отправляем, их необходимо пометить name="name" -->
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" />
+        <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone" />
+        <input type="text" class="input modal__input" placeholder="Email*" name="email" />
+        <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+        <div class="modal__footer">
+          <button class="button modal__button">Send</button>
+          <span class="modal__note">* Required Fields</span>
+        </div>
       </form>
     </div>
     <!-- /.modal__dialog -->
