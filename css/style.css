@@ -1172,6 +1172,7 @@ template {
   border: none;
   flex-basis: 100%;
   margin-bottom: 23px;
+  min-height: 123px;
 }
 
 .footer__button {
@@ -1639,9 +1640,6 @@ template {
   .footer__contact-form {
     grid-row: 7;
     grid-column: 1;
-  }
-  .footer__message {
-    max-height: 123px;
   }
   .footer__note {
     order: 1;
