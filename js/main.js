@@ -108,12 +108,6 @@ $(document).ready(function () {
     };
   }, true);
 
-  // $('.modal').click(function (e) {
-  //   if ($(e.target).closest('#overlay').length == 0) {
-
-  //     // $(this).fadeOut();
-  //   }
-  // });
 
   // Обработка форм
   $('.form').each(function () {
@@ -122,7 +116,7 @@ $(document).ready(function () {
       messages: {
         name: {
           required: 'we need your name',
-          minlength: 'The name must be at least two letters long'.
+          minlength: 'The name must be at least two letters long'
         },
         email: {
           required: 'We need your email address to contact you',
@@ -134,4 +128,9 @@ $(document).ready(function () {
       },
     });
   });
+
+  $('.phone').click(function () {
+    $(this).setCursorPosition(3);
+  }).mask("+7(999) 999-9999");
+  $('.phone').mask("+7(999) 999-9999");
 });
