@@ -235,7 +235,7 @@
         subscribe to our
         <span class="newsletter-titel__strong">Newsletter</span>
       </h2>
-      <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
         <input type="email" class="subscribe__input" placeholder="Your email address" name="email" />
         <button class="subscribe__button">Send</button>
       </form>
@@ -587,11 +587,13 @@ quest" class="card__image" />
           <form action="send.php" method="POST" class="footer__form form">
             <!-- Чтобы  send.php онимал, какие данные мы ему отправляем, их необходимо пометить name="name" -->
             <div class="footer__input_group">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required />
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required
+                minlength="2" />
             </div>
             <!-- /.footer__input_group -->
             <div class="footer__input_group">
-              <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" required />
+              <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" required
+                data-mask="(000) 000-0000" />
             </div>
             <!-- /.footer__input_group -->
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
@@ -639,9 +641,10 @@ quest" class="card__image" />
       <!-- Должны указать путь, куда мы будет отправлять все данные из нашей формы action="send.php", Также необходимо указать по какому методу мы будем их отправлять method="POST"-->
       <form action="send.php" method="POST" class="modal__form form">
         <!-- Чтобы  send.php онимал, какие данные мы ему отправляем, их необходимо пометить name="name" -->
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2"
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required
+          minlength="2" />
+        <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required
           data-mask="(000) 000-0000" />
-        <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required />
         <input type="email" class="input modal__input" placeholder="Email*" name="email" required />
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <div class="modal__footer">
@@ -665,8 +668,10 @@ quest" class="card__image" />
       <!-- Должны указать путь, куда мы будет отправлять все данные из нашей формы action="send.php", Также необходимо указать по какому методу мы будем их отправлять method="POST"-->
       <form action="send.php" method="POST" class="modal__form form">
         <!-- Чтобы  send.php онимал, какие данные мы ему отправляем, их необходимо пометить name="name" -->
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required />
-        <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required />
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required
+          minlength="2" />
+        <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required
+          data-mask="(000) 000-0000" />
         <input type="email" class="input modal__input" placeholder="Email*" name="email" required />
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <div class="modal__footer">
