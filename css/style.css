@@ -1803,8 +1803,8 @@ template {
   .logo {
     -webkit-animation-name: menuButtonDown;
             animation-name: menuButtonDown;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
   }
   .navbar__mobile_fixed {
     position: fixed;
@@ -1866,6 +1866,12 @@ template {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .breadcrumb-list {
+    -webkit-animation-name: menuButtonDown;
+            animation-name: menuButtonDown;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+  }
   .menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1889,8 +1895,8 @@ template {
     cursor: pointer;
     -webkit-animation-name: menuButtonDown;
             animation-name: menuButtonDown;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
   }
   .menu-button:focus {
     outline: none;
