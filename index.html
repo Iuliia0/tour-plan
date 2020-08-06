@@ -242,7 +242,7 @@
         <span class="newsletter-titel__strong">Newsletter</span>
       </h2>
       <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
-        <div class="modal__wrapper subscribe__wrapper_input">
+        <div class="newsletter__subscribe-wrapper subscribe__wrapper_input">
           <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required />
         </div>
         <!-- /.modal__wrapper -->
@@ -439,7 +439,7 @@
         Other Activities
       </h2>
       <div class="activities-wrapper">
-        <div class="card activities__card" data-aos="fade-up" data-aos-delay="150">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="200">
           <img src="img/activity-1.jpg" alt="The curious corner 
 of chamarel" class="card__image" />
           <h3 class="card__titel">The curious corner of chamarel</h3>
@@ -453,7 +453,7 @@ course" class="card__image" />
           <button class="card__button">Book Now</button>
         </div>
         <!-- card -->
-        <div class="card activities__card" data-aos="fade-up" data-aos-delay="250">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="200">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking
 trip - full day
 " class="card__image" />
@@ -461,7 +461,7 @@ trip - full day
           <button class="card__button">Book Now</button>
         </div>
         <!-- card -->
-        <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="200">
           <img src="img/activity-4.jpg" alt="The blue marine discovery
 quest" class="card__image" />
           <h3 class="card__titel">The blue marine discovery quest</h3>
@@ -600,12 +600,12 @@ quest" class="card__image" />
           <!-- Должны указать путь, куда мы будет отправлять все данные из нашей формы action="send.php", Также необходимо указать по какому методу мы будем их отправлять method="POST"-->
           <form action="send.php" method="POST" class="footer__form form">
             <!-- Чтобы  send.php онимал, какие данные мы ему отправляем, их необходимо пометить name="name" -->
-            <div class="footer__input_group modal__wrapper">
+            <div class="footer__form-wrapper footer__input_group">
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required
                 minlength="2" />
             </div>
             <!-- /.footer__input_group -->
-            <div class="footer__input_group modal__wrapper">
+            <div class="footer__form-wrapper footer__input_group">
               <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" required
                 data-mask="(000) 000-0000" />
             </div>

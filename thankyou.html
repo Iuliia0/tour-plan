@@ -11,6 +11,7 @@
     rel="stylesheet" />
 
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/aos.css" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://api-maps.yandex.ru/2.1/?apikey=6fc2456c-1cb5-4647-b67c-c5db129e395c
 &lang=ru_RU"></script>
@@ -268,12 +269,12 @@
           <!-- Должны указать путь, куда мы будет отправлять все данные из нашей формы action="send.php", Также необходимо указать по какому методу мы будем их отправлять method="POST"-->
           <form action="send.php" method="POST" class="footer__form form">
             <!-- Чтобы  send.php онимал, какие данные мы ему отправляем, их необходимо пометить name="name" -->
-            <div class="footer__input_group modal__wrapper">
+            <div class="footer__form-wrapper footer__input_group">
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required
                 minlength="2" />
             </div>
             <!-- /.footer__input_group -->
-            <div class="footer__input_group modal__wrapper">
+            <div class="footer__form-wrapper footer__input_group">
               <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" required
                 data-mask="(000) 000-0000" />
             </div>
@@ -327,6 +328,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/jquery.validate.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 
 </body>
