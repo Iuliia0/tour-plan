@@ -15,6 +15,7 @@
     />
 
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://api-maps.yandex.ru/2.1/?apikey=6fc2456c-1cb5-4647-b67c-c5db129e395c
 &lang=ru_RU"></script>
@@ -24,7 +25,7 @@
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plane"
@@ -165,7 +166,11 @@
         <div class="hotel-info">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
-              <div class="stars stars-section">
+              <div
+                class="stars stars-section"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <div class="stras-block">
                   <img class="stars__images" src="img/Star.svg" alt="star" />
                   <img class="stars__images" src="img/Star.svg" alt="star" />
@@ -174,11 +179,26 @@
                   <img class="stars__images" src="img/Star.svg" alt="star" />
                 </div>
               </div>
-              <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
-              <span class="offer hotel-info__offer">Flash Offer</span>
+              <h1
+                class="hotel-name hotel-info__name"
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
+                GRAND HILTON HOTEL
+              </h1>
+              <span
+                class="offer hotel-info__offer"
+                data-aos="fade-up"
+                data-aos-delay="150"
+                >Flash Offer</span
+              >
             </div>
             <!-- /.hotel-wrapper -->
-            <p class="hotel-description hotel-info__description">
+            <p
+              class="hotel-description hotel-info__description"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
               Half-Board/ All Inclusive + Complimentary Activities + Child Stays
               Free
             </p>
@@ -188,6 +208,8 @@
             data-toggle="modal"
             data-href="#raiting-modal"
             class="raiting hotel-info__raiting"
+            data-aos="fade-up"
+            data-aos-delay="150"
           >
             <span class="raiting__text">User Rattings</span>
             <span class="raiting__counter">4.5/5</span>
@@ -200,6 +222,8 @@
           <div
             class="swiper-container hotel__slider hotel-slider"
             onclick="FocustoTextbox(1)"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper" tabindex="1">
@@ -231,7 +255,7 @@
           </div>
           <!-- /.swiper-container -->
 
-          <div class="hotel-right">
+          <div class="hotel-right" data-aos="fade-up" data-aos-delay="200">
             <div class="booking">
               <div class="booking__info">
                 <div class="booking__price">
@@ -292,7 +316,7 @@
     </section>
     <!-- /.hotel -->
     <section class="newsletter">
-      <div class="newsletter-wrapper">
+      <div class="newsletter-wrapper" data-aos="fade-up" data-aos-delay="250">
         <h2 class="newsletter-titel newsletter__titel">
           subscribe to our
           <span class="newsletter-titel__strong">Newsletter</span>
@@ -322,9 +346,15 @@
     <!-- /.newsletter -->
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__titel">What people thinks about us</h2>
+        <h2 class="reviews__titel" data-aos="fade-up" data-aos-delay="100">
+          What people thinks about us
+        </h2>
         <!-- Slider main container -->
-        <div class="swiper-container reviews-slider">
+        <div
+          class="swiper-container reviews-slider"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -623,9 +653,15 @@
     <!-- /.section -->
     <section class="activities">
       <div class="container">
-        <h2 class="activities__titel">Other Activities</h2>
+        <h2 class="activities__titel" data-aos="fade-up" data-aos-delay="100">
+          Other Activities
+        </h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The curious corner 
@@ -636,7 +672,11 @@ of chamarel"
             <button class="card__button">Book Now</button>
           </div>
           <!-- card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf
@@ -647,7 +687,11 @@ course"
             <button class="card__button">Book Now</button>
           </div>
           <!-- card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking
@@ -659,7 +703,11 @@ trip - full day
             <button class="card__button">Book Now</button>
           </div>
           <!-- card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery
@@ -683,8 +731,14 @@ quest"
             src="img/vertical-logo.svg"
             alt="Logo: Best Tour Plan"
             class="logo footer__logo"
+            data-aos="fade-up"
+            data-aos-delay="100"
           />
-          <div class="footer__list footer__categories">
+          <div
+            class="footer__list footer__categories"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <h3 class="footer__titel">ALL CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -714,7 +768,11 @@ quest"
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__list footer__additional">
+          <div
+            class="footer__list footer__additional"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <h3 class="footer__titel">ADDITIONAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -740,7 +798,11 @@ quest"
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__social-network">
+          <div
+            class="footer__social-network"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
             <h3 class="footer__titel footer__titel--inline">Social Network</h3>
             <div class="footer__social-links">
               <a href="#" class="footer__link"
@@ -756,7 +818,11 @@ quest"
             <!-- /.fotter__sociale-links -->
           </div>
           <!-- /.footer__social-network -->
-          <div class="footer__list footer__legal">
+          <div
+            class="footer__list footer__legal"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <h3 class="footer__titel">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -774,7 +840,11 @@ quest"
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__contact-details">
+          <div
+            class="footer__contact-details"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <h3 class="footer__titel footer__titel--mb-3">Contact Details</h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
@@ -820,7 +890,11 @@ quest"
             </ul>
           </div>
           <!-- /.footer__contact-details -->
-          <div class="footer__contact-form">
+          <div
+            class="footer__contact-form"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <h3 class="footer__titel footer__titel--mb-3">Send us a message</h3>
             <!-- Должны указать путь, куда мы будет отправлять все данные из нашей формы action="send.php", Также необходимо указать по какому методу мы будем их отправлять method="POST"-->
             <form action="send.php" method="POST" class="footer__form form">
@@ -1041,6 +1115,7 @@ quest"
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/jquery.validate.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -1578,6 +1578,32 @@ template {
   line-height: 15px;
 }
 
+@-webkit-keyframes menuButtonDown {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes menuButtonDown {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1774,6 +1800,12 @@ template {
   body {
     padding-top: 78px;
   }
+  .logo {
+    -webkit-animation-name: menuButtonDown;
+            animation-name: menuButtonDown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
   .navbar__mobile_fixed {
     position: fixed;
     right: 0;
@@ -1788,6 +1820,16 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-animation-name: menuButtonDown;
+            animation-name: menuButtonDown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
+  .navbar-menu__item {
+    -webkit-animation-name: menuButtonDown;
+            animation-name: menuButtonDown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
   }
   .navbar-button {
     display: none;
@@ -1845,6 +1887,10 @@ template {
     border: none;
     background-color: #ffffff;
     cursor: pointer;
+    -webkit-animation-name: menuButtonDown;
+            animation-name: menuButtonDown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
   }
   .menu-button:focus {
     outline: none;

@@ -133,4 +133,8 @@ $(document).ready(function () {
     $(this).setCursorPosition(3);
   }).mask("+7(999) 999-9999");
   $('.phone').mask("+7(999) 999-9999");
+
+  AOS.init();
+
+
 });

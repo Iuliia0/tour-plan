@@ -141,6 +141,10 @@
   body
     padding-top: 78px
 
+  .logo
+    animation-name: menuButtonDown
+    animation-duration: 1s
+
   .navbar
     &__mobile
       &_fixed
@@ -155,6 +159,13 @@
           display: none
         &_visible
           display: flex
+          animation-name: menuButtonDown
+          animation-duration: 1s
+    &-menu
+      &__item
+        animation-name: menuButtonDown
+        animation-duration: 1s
+
     // &__search, &__user
     //   display: none
        // скрываем блок с меню to` раз, так  в прошлы были скрыты только элементы
@@ -192,6 +203,8 @@
       border: none
       background-color: $light
       cursor: pointer
+      animation-name: menuButtonDown
+      animation-duration: 1s
       &:focus
         outline: none
       &__line
