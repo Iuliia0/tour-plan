@@ -17,7 +17,7 @@
     position: fixed
     top: 50%
     left: 50%
-    max-width: 478px
+    min-width: 478px
     padding: 33px 88px
     background-color: $dark
     transform: translate(-50%, -50%)
@@ -44,21 +44,27 @@
     margin-bottom: 15px
     text-transform: uppercase
     text-align: center
+  &__wrapper
+    position: relative
   &__input
     width: 100%
-    margin-top: 15px
+    margin-top: 25px
+    &:focus
+      outline: none
   &__message
     width: 100%
     min-height: 123px
-    margin-top: 15px
+    margin-top: 25px
   &__footer
     display: flex
     align-items: center
     justify-content: space-between
-    margin-top: 15px
+    margin-top: 20px
   &__note
     font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
+
+
 

@@ -45,11 +45,15 @@ body {
 }
 
 .invalid {
-  color: #EC1F46;
-  border-bottom: 1px solid #EC1F46;
+  color: #f75252;
+  text-transform: capitalize;
 }
 
-.name-error {
+label {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 12px;
   margin-top: 5px;
 }
 
@@ -959,10 +963,13 @@ template {
 
 .subscribe {
   position: relative;
-  width: 350px;
-  height: 55px;
   border-radius: 4px;
   overflow: hidden;
+}
+
+.subscribe__wrapper_input {
+  width: 350px;
+  height: 55px;
 }
 
 .subscribe__input {
@@ -1379,6 +1386,7 @@ template {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 23px;
+  margin-top: 10px;
   min-height: 123px;
 }
 
@@ -1494,7 +1502,7 @@ template {
   position: fixed;
   top: 50%;
   left: 50%;
-  max-width: 478px;
+  min-width: 478px;
   padding: 33px 88px;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
@@ -1531,15 +1539,23 @@ template {
   text-align: center;
 }
 
+.modal__wrapper {
+  position: relative;
+}
+
 .modal__input {
   width: 100%;
-  margin-top: 15px;
+  margin-top: 25px;
+}
+
+.modal__input:focus {
+  outline: none;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .modal__footer {
@@ -1552,7 +1568,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .modal__note {
@@ -1578,6 +1594,9 @@ template {
   .card {
     width: 230px;
     height: 230px;
+  }
+  .footer__input {
+    margin-top: 10px;
   }
   .footer__input_group {
     -ms-flex-preferred-size: 100%;
@@ -1721,6 +1740,7 @@ template {
   }
   .modal__dialog {
     padding: 30px 60px;
+    max-width: 478px;
   }
   .modal__footer {
     -ms-flex-wrap: wrap;
@@ -1978,7 +1998,7 @@ template {
   }
   .modal__dialog {
     padding: 30px 40px;
-    width: 90%;
+    min-width: 80%;
   }
 }
 
@@ -2126,6 +2146,9 @@ template {
     left: 0;
     top: 50px;
     right: 50%;
+  }
+  .modal__message {
+    margin-top: 35px;
   }
 }
 /*# sourceMappingURL=style.css.map */
