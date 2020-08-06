@@ -204,7 +204,7 @@
           <h3 class="footer__titel footer__titel--inline">Social Network</h3>
           <div class="footer__social-links">
             <a href="#" class="footer__link"><img src="img/facebook.svg" alt="Icon: Facebook" /></a>
-            <a href="#" class="footer__link"><img src="img/youtube.svg" alt="Icon: YouTube"></a>
+            <a href="#" class="footer__link"><img src="img/youtube.svg" alt="Icon: YouTube" /></a>
             <a href="#" class="footer__link"><img src="img/instagram.svg" alt="Icon: Instagram" /></a>
           </div>
           <!-- /.fotter__sociale-links -->
@@ -239,16 +239,15 @@
                 <img class="footer__icon" src="img/map-marker.svg" alt="Icon: map" />
               </div>
               <!-- /.footer__icon-wrapper -->
-              9748 Blossom
-              Hill Rd undefined Lansing, Idaho 68545 United States
+              9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+              States
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/phone-call.svg" alt="Icon: Phone Call" />
               </div>
               <!-- /.footer__icon-wrapper -->
-              Tel
-              (business hours) : 269 1500 <br />
+              Tel (business hours) : 269 1500 <br />
               Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
               pm) <br />
               Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm) <br />
@@ -268,12 +267,12 @@
           <!-- Должны указать путь, куда мы будет отправлять все данные из нашей формы action="send.php", Также необходимо указать по какому методу мы будем их отправлять method="POST"-->
           <form action="send.php" method="POST" class="footer__form form">
             <!-- Чтобы  send.php онимал, какие данные мы ему отправляем, их необходимо пометить name="name" -->
-            <div class="footer__input_group">
+            <div class="footer__input_group modal__wrapper">
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required
                 minlength="2" />
             </div>
             <!-- /.footer__input_group -->
-            <div class="footer__input_group">
+            <div class="footer__input_group modal__wrapper">
               <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" required
                 data-mask="(000) 000-0000" />
             </div>
@@ -288,22 +287,32 @@
       <!-- /.footer-wrapper -->
       <div class="footer__info">
         <ul class="footer__info-wrapper">
-          <li class="footer__info-list"><a href="#" class="footer__link">Disclaimer</a></li>
-          <li class="footer__info-list"><a href="#" class="footer__link">Conditions of use</a></li>
-          <li class="footer__info-list"><a href="#" class="footer__link">Cancellation policy</a></li>
+          <li class="footer__info-list">
+            <a href="#" class="footer__link">Disclaimer</a>
+          </li>
+          <li class="footer__info-list">
+            <a href="#" class="footer__link">Conditions of use</a>
+          </li>
+          <li class="footer__info-list">
+            <a href="#" class="footer__link">Cancellation policy</a>
+          </li>
         </ul>
         <!-- /.footer__info-wrapper -->
         <div class="footer__pay">
           <a href="https://www.americanexpress.com/" class="footer__pay-item"><img src="img/american_express.svg"
-              alt="Icon: American Express" class="footer__pay-icon"></a>
+              alt="Icon: American Express" class="footer__pay-icon" /></a>
+
           <a href="#" class="footer__pay-item"><img src="img/apple.svg" alt="Icon: Apple Pay"
-              class="footer__pay-icon"></a>
+              class="footer__pay-icon" /></a>
+
           <a href="https://pay.amazon.com/" class="footer__pay-item"><img src="img/amazon.png" alt="Icon: Amazon Pay"
-              class="footer__pay-icon"></a>
+              class="footer__pay-icon" /></a>
+
           <a href="https://www.paypal.com" class="footer__pay-item"><img src="img/paypal.svg" alt="Icon: PayPal"
-              class="footer__pay-icon"></a>
+              class="footer__pay-icon" /></a>
+
           <a href="#" class="footer__pay-item"><img src="img/maestro.svg" alt="Icon: Maesto Pay"
-              class="footer__pay-icon"></a>
+              class="footer__pay-icon" /></a>
         </div>
         <!-- /.footer__pay -->
       </div>
