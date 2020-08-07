@@ -89,6 +89,20 @@ $(document).ready(function () {
     });
   });
 
+  $('.formFooter').each(function () {
+    $(this).validate({
+      messages: {
+        name: {
+          required: 'we need your name',
+          minlength: 'The name must be at least two letters long'
+        },
+        phone: {
+          required: 'We need your phone',
+        },
+      },
+    });
+  });
+
   $('.phone').click(function () {
     $(this).setCursorPosition(3);
   }).mask("+7(999) 999-9999");

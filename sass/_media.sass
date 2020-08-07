@@ -21,6 +21,13 @@
       &_group
         flex-basis: 100%
 
+  .error
+    &#phone-error
+      top: 191px
+      left: 0
+    &#name-error
+      top: 115px
+      left: 0
 @media (max-width: 992px)
 
   button
@@ -139,6 +146,13 @@
       flex-basis: 100%
       margin-bottom: 15px
 
+  .error
+    &#name-error
+      top: 115px
+      left: 0
+    &#phone-error
+      top: 115px
+      left: 301px
 
 @media (max-width: 768px)
   .container
@@ -336,6 +350,13 @@
       padding: 30px 40px
       min-width: 80%
 
+  .error
+    &#phone-error
+      top: 191px
+      left: 0
+    &#name-error
+      top: 115px
+      left: 0
 @media (max-width: 576px)
 
   .logo
@@ -448,9 +469,29 @@
       margin-top: 35px
 
 @media (max-width: 320px)
+  .container
+    width: 87%
+
   .hotel
     &-info
       &__text
         &_hidden
           display: block
+    &__slider
+      width: 279px
+      height: 144px
+    &-slider
+      &__button
+        &--next
+          height: 11px
+          width: 11px
+        &--prev
+          height: 11px
+          width: 11px
+
+  .booking
+    padding: 29px 22px 26px 222 
+
+
+  
 
