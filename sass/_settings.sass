@@ -6,6 +6,17 @@ body
   background-color: $secondary
   color: $text-color
 
+button
+  &:hover
+    transform: scale(1.05)
+  &:active
+    transform: scale(0.97)
+    outline: none
+  &:focus
+    outline: none
+    
+  
+
 .container 
   max-width: 1110px
   margin: auto
@@ -39,6 +50,7 @@ body
   border: none
   border-radius: 4px
   cursor: pointer
+
 
 .invalid
   color: #f75252
