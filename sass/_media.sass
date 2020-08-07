@@ -338,10 +338,10 @@
       min-width: 80%
 
 @media (max-width: 576px)
+
   .logo
-    width: 99px
-  // .slider
-  //   height: 250px
+    &__img
+      width: 99px
 
   .hotel
     padding-bottom: 40px
@@ -443,3 +443,11 @@
   .modal
     &__message
       margin-top: 35px
+
+@media (max-width: 320px)
+  .hotel
+    &-info
+      &__text
+        &_hidden
+          display: block
+
