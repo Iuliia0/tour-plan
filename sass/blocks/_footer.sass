@@ -28,6 +28,19 @@
       grid-row: 2 / 4
       grid-column: 3 / 5
   &__contact
+    &-link
+      margin-top: 0 
+    &-tel
+      text-decoration: none
+      color: inherit
+      &:hover
+        color: $primary
+    &-email
+      text-decoration: none
+      color: inherit
+      padding-bottom: 2px
+      &:hover
+        color: $primary
     &-details
       grid-column: span 2
     &-form
@@ -74,6 +87,8 @@
   &__link
     text-decoration: none
     color: inherit
+    &:hover
+      transform: scale(1.5)
   &__input
     width: 100%
     &_group
@@ -94,7 +109,6 @@
       background-color: transparent
       color: $primary
       border: 1px solid $primary
-  
   &__note
     display: flex
     align-items: center

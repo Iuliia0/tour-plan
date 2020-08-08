@@ -77,6 +77,13 @@
       height: 450px
   .booking  
     width: 340px
+    &__button
+      &:hover
+        background-color: $primary
+        color: $light
+        transform: none
+      &:active
+        transform: none
   .map
     width: 340px
     height: 225px
@@ -97,6 +104,15 @@
   .card
     width: 48%
     height: 250px
+    &__button
+      &:hover
+        background-color: $primary
+        text-transform: capitalize
+        transform: none
+        font-weight: 400
+      &:active
+        transform: none
+        
   
   .footer
     &-wrapper
@@ -113,6 +129,9 @@
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
+    &__link
+      &:hover
+        transform: none
     &__categories
       grid-row: 2 / 3
       grid-column: 1 / 2
@@ -122,6 +141,12 @@
     &__legal
       grid-column: span 2
     &__contact
+      &-tel
+        &:hover
+          color: $text-color
+      &-email
+        &:hover
+          color: $text-color
       &-details
         grid-column: span 5
         grid-row: 3 
@@ -154,6 +179,13 @@
     &__button
       order: 2
       flex-basis: 100%
+      &:hover
+        background-color: $primary
+        color: $light
+        transform: none
+      &:active
+        transform: none
+
     &__footer
       margin-top: 10px
     &__note
