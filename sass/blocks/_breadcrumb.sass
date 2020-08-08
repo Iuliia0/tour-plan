@@ -6,8 +6,8 @@
     margin: 0
     list-style: none
     &__item
-      font-size: 10px;
-      line-height: 13px;
+      font-size: 10px
+      line-height: 13px
       &:not(:last-child)
         &::after
           content: '/'
@@ -15,4 +15,7 @@
     &__link
       text-decoration: none
       color: inherit
+      &:hover
+        border-bottom: 1px solid $primary
+        padding-bottom: 2px
 
