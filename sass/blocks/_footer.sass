@@ -4,7 +4,7 @@
   padding: 108px 0 46px 0
   &-wrapper
     display: grid
-    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-template-columns: repeat(4, minmax(max-content, 1fr))
     grid-gap: 20px
     // добавили пустую строку. Для того, xnj.s увелить расстояние между секциями, как по макету
     grid-auto-rows: minmax(40px, min-content)
@@ -16,6 +16,8 @@
     align-self: center
   &__categories
     grid-row: 1 / 4
+  &__legal
+    margin-left: 73px
   &__social
     &-links
       display: flex
