@@ -35,7 +35,11 @@
     right: 18px
     top: 17px
     text-decoration: none
-    coursor: pointer 
+    coursor: pointer
+    &:hover
+      transform: scale(1.2)
+    &:active
+      transform: scale(1)
   &__titel
     font-style: normal
     font-weight: bold
@@ -58,6 +62,10 @@
   &__button
     &:focus
       outline: none
+    &:hover
+      background-color: transparent
+      color: $primary
+      border: 1px solid $primary
   &__footer
     display: flex
     align-items: center

@@ -32,6 +32,9 @@
 
   button
     &:hover
+      background-color: $primary
+      border: none
+      color: $light
       transform: none
     &:active
       transform: none
@@ -125,6 +128,14 @@
       &-form
         grid-column: span 5
         grid-row: 4
+    &__button
+      &:hover
+        background-color: $primary
+        border: none
+        color: $light
+        transform: none
+      &:active
+        transform: none
     &__info
       margin-top: 70px
       justify-content: flex-start
@@ -135,6 +146,9 @@
     &__dialog
       padding: 30px 60px
       max-width: 478px
+    &__close
+      &:hover
+        transform: none
     &__footer
       flex-wrap: wrap
     &__button

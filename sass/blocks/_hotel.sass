@@ -198,8 +198,11 @@
     font-size: 18px
     line-height: 25px
   &__button
+    display: flex
+    align-items: center
+    justify-content: center
     width: 100%
-    min-height: 45px
+    max-height: 45px
     font-style: normal
     font-weight: 600
     font-size: 14px
@@ -209,8 +212,10 @@
     color: $light
     cursor: pointer
     border: none
-    &:focus
-      outline: none
+    &:hover
+      background-color: transparent
+      color: $primary
+      border: 1px solid $primary
 
 .map
   // карте можно задавать фиксированные значения, так как она не долдна вываливаться
