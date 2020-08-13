@@ -216,7 +216,7 @@
       &-wrapper
         padding-left: 0
     &__form
-      width: 97%
+      max-width: 539px
     &__input
       margin-top: 0
 
@@ -254,7 +254,12 @@
       top: 115px
       left: 301px
 
-@media (max-width: 768px)
+  .thanks
+    &__button
+      &:hover
+        background-color: $primary
+
+@media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
@@ -265,8 +270,6 @@
   .logo
     animation-name: menuButtonDown
     animation-duration: 0.4s
-
-
 
   .navbar
     &__mobile
@@ -285,9 +288,12 @@
           animation-name: menuButtonDown
           animation-duration: 1s
     &-menu
+      max-height: 600px
+      overflow: scroll
       &__item
         animation-name: menuButtonDown
         animation-duration: 1s
+
 
     // &__search, &__user
     //   display: none
@@ -302,6 +308,8 @@
       padding-top: 30px
       &--visible
         display: block
+        height: 100%
+        overflow: auto
     &-menu
       flex-direction: column
       &__item
@@ -331,8 +339,8 @@
       border: none
       background-color: $light
       cursor: pointer
-      animation-name: menuButtonDown
-      animation-duration: 0.4s
+      // animation-name: menuButtonDown
+      // animation-duration: 0.4s
       &:focus
         outline: none
       &__line
@@ -453,9 +461,9 @@
       &-img
         width: 100%
         height: 100%
-
     &__titel
       font-size: 13px
+      margin-bottom: 29px
     &__link, 
     &__item,
     &__text,
@@ -528,7 +536,6 @@
 
   .booking
     padding: 29px 22px 26px 22px
-    font-family: Nunito 
 
   .swiper
     &-images
@@ -544,8 +551,6 @@
       &--visible
         height: 600px
     &-menu
-      height: 600px
-      overflow-y: scroll
     &__search
       &_mobile
         &_visible
@@ -644,10 +649,14 @@
     &__info
       justify-content: flex-start
       margin-top: 30px
-
+      margin: 0
+      padding-top: 18px
+      &-wrapper
+      &-list
+        height: 15px
     &__pay
       left: 0
-      top: 50px
+      top: 54px
       right: 50%
 
   .thanks
@@ -681,12 +690,14 @@
         &--prev
           height: 11px
           width: 11px
+    &-right
+      min-height: 402px
   
   .booking
     height: 210px
 
   .map
-    height: 210px
+    height: 172px
 
   .thanks
     padding: 15px
